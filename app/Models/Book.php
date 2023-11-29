@@ -17,6 +17,7 @@ class Book extends Model
         'images',
         'deposit',
         'is_available',
+        'literature_origin',
         'date_of_release',
     ];
 }

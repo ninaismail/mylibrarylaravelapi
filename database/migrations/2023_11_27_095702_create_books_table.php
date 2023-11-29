@@ -17,6 +17,7 @@ return new class extends Migration
                 $table->string('author');
                 $table->string('brief');
                 $table->text('description');
+                $table->text('literature_origin');
                 $table->string('cover_image');
                 $table->json('images');
                 $table->decimal('deposit', 8, 2);
