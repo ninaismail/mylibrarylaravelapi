@@ -54,7 +54,7 @@ class BookSeeder extends Seeder
                         "cover" => "/images/books/kafkaontheshore_cover.webp",
                     ]),
                     "deposit" => 2.99,
-                    "is_available" => true,
+                    "is_available" => false,
                     "date_of_release" => "2002",
                     "literature_origin" => "Japanese"
                 ],

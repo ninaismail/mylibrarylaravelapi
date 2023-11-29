@@ -13,7 +13,17 @@ class BookController extends Controller
     }
     public function find($id)
     {
-        $product = Book::find($id);
-        return $product;
-    }  
+        $book = Book::find($id);
+        return $book;
+    }
+    public function getSearchResults($title) 
+    {
+      $searchresult = Book::where('title',"LIKE","%".$title."%")->get();
+      return $searchresult;
+    }    
+    public function getByOrigin($origin) 
+    {
+        $booksByOrigin = Book::where('literature_origin', $origin)->get();
+        return $booksByOrigin;
+    }
 }
